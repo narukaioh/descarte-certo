@@ -4,7 +4,7 @@ import IconPass from '../images/icon_lock.png'
 import IconBack from '../images/iconevoltar.png';
 import './loginStyle.css'
 import { Form, FormGroup, Input, Row, Col } from 'reactstrap';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Nav } from 'react-bootstrap';
@@ -36,7 +36,7 @@ function LoginPage() {
 
   return (
     <div>
-      <Nav.Link href="/"> <img alt="userIcone" class="imgIcons" src={IconBack}></img></Nav.Link>
+      <Link to="/"> <img alt="userIcone" class="imgIcons" src={IconBack}></img></Link>
       <div className="container">
         <ToastContainer
           position="top-center"

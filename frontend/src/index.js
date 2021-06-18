@@ -12,10 +12,11 @@ import OrderListComponent from './components/OrderList';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" exact={true} component={App} />
+      <Route exact path="/" component={App} />
       <Route exact path="/contato" component={Footer} />
       <Route exact path="/beneficios" component={Benefits} />
       <Route exact path="/orcamentos" component={OrderListComponent} />
+      <Route exact path="/login" component={LoginPage} />
     </Switch>
 
   </BrowserRouter>,
