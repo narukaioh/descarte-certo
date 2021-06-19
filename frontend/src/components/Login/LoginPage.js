@@ -36,7 +36,7 @@ function LoginPage() {
 
   return (
     <div>
-      <Link to="/"> <img alt="userIcone" class="imgIcons" src={IconBack}></img></Link>
+      <Link className="nav-link" to="/"> <img alt="userIcone" class="imgIcons" src={IconBack}></img></Link>
       <div className="container">
         <ToastContainer
           position="top-center"
